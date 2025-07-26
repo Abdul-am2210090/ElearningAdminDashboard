@@ -146,6 +146,7 @@ a {
 #dashboardTitle {
   padding: 30px;
   height: 80px;
+  cursor: auto;
 }
 
 #summaryCards {
@@ -240,4 +241,30 @@ a {
 }
 #deleteCourseBTN :hover{
   background-color: rgb(240, 128, 128)
+}
+
+#navBTN{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #sidebar{
+    display: none;
+  }
+  
+  body {
+    grid-template: 
+    "topbar"
+    "main";
+  }
+
+  #summaryCards{
+    grid-template-columns: 1fr;
+  }
+
+  #navBTN{
+    display: block;
+  }
+  
+
 }
